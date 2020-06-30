@@ -2,4 +2,4 @@ build:
   docker:
     web: Dockerfile
 run:
-  web: /doccano/tools/run.sh
+  web: /prolabel/tools/run.sh

@@ -1,12 +1,12 @@
 # Project information
-site_name: 'doccano'
+site_name: 'prolabel'
 site_description: 'A Text Annotation tool for Human'
 site_author: 'Hiroki Nakayama'
-site_url: 'https://chakki-works.github.io/doccano/'
+site_url: 'https://quinnpertuit1.github.io/prolabel/'
 
 # Repository
-repo_name: 'chakki-works/doccano'
-repo_url: 'https://github.com/chakki-works/doccano'
+repo_name: 'quinnpertuit1/prolabel'
+repo_url: 'https://github.com/quinnpertuit1/prolabel'
 
 # Copyright
 copyright: 'Copyright &copy; 2018 - 2019 Hiroki Nakayama'

@@ -78,7 +78,7 @@
     "databaseName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "doccano",
+      "defaultValue": "prolabel",
       "metadata": {
         "description": "The name of the database to provision on the PostgreSQL server."
       }
@@ -86,7 +86,7 @@
     "dockerImageName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "chakkiworks/doccano:latest",
+      "defaultValue": "quinnpertuit1/prolabel:latest",
       "metadata": {
         "description": "The Docker image to deploy."
       }

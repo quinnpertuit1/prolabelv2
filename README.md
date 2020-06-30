@@ -1,27 +1,27 @@
-# doccano
+# prolabel
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/98a0992c0a254d0ba23fd75631fe2907)](https://app.codacy.com/app/Hironsan/doccano?utm_source=github.com&utm_medium=referral&utm_content=chakki-works/doccano&utm_campaign=Badge_Grade_Dashboard)
-[![Build Status](https://travis-ci.org/chakki-works/doccano.svg?branch=master)](https://travis-ci.org/chakki-works/doccano)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/98a0992c0a254d0ba23fd75631fe2907)](https://app.codacy.com/app/Hironsan/prolabel?utm_source=github.com&utm_medium=referral&utm_content=quinnpertuit1/prolabel&utm_campaign=Badge_Grade_Dashboard)
+[![Build Status](https://travis-ci.org/quinnpertuit1/prolabel.svg?branch=master)](https://travis-ci.org/quinnpertuit1/prolabel)
 
-doccano is an open source text annotation tool for human. It provides annotation features for text classification, sequence labeling and sequence to sequence. So, you can create labeled data for sentiment analysis, named entity recognition, text summarization and so on. Just create project, upload data and start annotation. You can build dataset in hours.
+prolabel is an open source text annotation tool for human. It provides annotation features for text classification, sequence labeling and sequence to sequence. So, you can create labeled data for sentiment analysis, named entity recognition, text summarization and so on. Just create project, upload data and start annotation. You can build dataset in hours.
 
 ## Demo
 
-You can enjoy [annotation demo](http://doccano.herokuapp.com).
+You can enjoy [annotation demo](http://prolabel.herokuapp.com).
 
-### [Named entity recognition](https://doccano.herokuapp.com/demo/named-entity-recognition/)
+### [Named entity recognition](https://prolabel.herokuapp.com/demo/named-entity-recognition/)
 
-First demo is one of the sequence labeling tasks, named-entity recognition. You just select text spans and annotate it. Since doccano supports shortcut key, so you can quickly annotate text spans.
+First demo is one of the sequence labeling tasks, named-entity recognition. You just select text spans and annotate it. Since prolabel supports shortcut key, so you can quickly annotate text spans.
 
 ![Named Entity Recognition](./docs/named_entity_annotation.gif)
 
-### [Sentiment analysis](https://doccano.herokuapp.com/demo/text-classification/)
+### [Sentiment analysis](https://prolabel.herokuapp.com/demo/text-classification/)
 
 Second demo is one of the text classification tasks, topic classification. Since there may be more than one category, you can annotate multi-labels.
 
 ![Text Classification](./docs/text_classification.gif)
 
-### [Machine translation](https://doccano.herokuapp.com/demo/translation/)
+### [Machine translation](https://prolabel.herokuapp.com/demo/translation/)
 
 Final demo is one of the sequence to sequence tasks, machine translation. Since there may be more than one responses in sequence to sequence tasks, you can create multi responses.
 
@@ -34,7 +34,7 @@ Final demo is one of the sequence to sequence tasks, machine translation. Since 
 Doccano can be deployed to Azure ([Web App for Containers](https://azure.microsoft.com/en-us/services/app-service/containers/) +
 [PostgreSQL database](https://azure.microsoft.com/en-us/services/postgresql/)) by clicking on the button below:
 
-[![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchakki-works%2Fdoccano%2Fmaster%2Fazuredeploy.json)
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fquinnpertuit1%2Fprolabel%2Fmaster%2Fazuredeploy.json)
 
 ### Heroku
 
@@ -42,7 +42,7 @@ Doccano can be deployed to [Heroku](https://www.heroku.com/) by clicking on the 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-Of course, you can deploy doccano by using [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli).
+Of course, you can deploy prolabel by using [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli).
 
 ```bash
 heroku create
@@ -54,9 +54,9 @@ git push heroku master
 
 Doccano can be deployed to AWS ([Cloudformation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)) by clicking on the button below:
 
-[![AWS CloudFormation Launch Stack SVG Button](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://s3-external-1.amazonaws.com/cf-templates-10vry9l3mp71r-us-east-1/20190732wl-new.templatexloywxxyimi&stackName=doccano)
+[![AWS CloudFormation Launch Stack SVG Button](https://cdn.rawgit.com/buildkite/cloudformation-launch-stack-button-svg/master/launch-stack.svg)](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://s3-external-1.amazonaws.com/cf-templates-10vry9l3mp71r-us-east-1/20190732wl-new.templatexloywxxyimi&stackName=prolabel)
 
-> Notice: (1) EC2 KeyPair cannot be created automatically, so make sure you have an existing EC2 KeyPair in one region. Or [create one yourself](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair). (2) If you want to access doccano via HTTPS in AWS, here is an [instruction](https://github.com/chakki-works/doccano/wiki/HTTPS-setting-for-doccano-in-AWS).
+> Notice: (1) EC2 KeyPair cannot be created automatically, so make sure you have an existing EC2 KeyPair in one region. Or [create one yourself](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html#having-ec2-create-your-key-pair). (2) If you want to access prolabel via HTTPS in AWS, here is an [instruction](https://github.com/quinnpertuit1/prolabel/wiki/HTTPS-setting-for-prolabel-in-AWS).
 
 ## Features
 
@@ -77,16 +77,16 @@ Doccano can be deployed to AWS ([Cloudformation](https://docs.aws.amazon.com/AWS
 First of all, you have to clone the repository:
 
 ```bash
-git clone https://github.com/chakki-works/doccano.git
-cd doccano
+git clone https://github.com/quinnpertuit1/prolabel.git
+cd prolabel
 ```
 
-To install doccano, there are three options:
+To install prolabel, there are three options:
 
 **Option1: Pull the production Docker image**
 
 ```bash
-docker pull chakkiworks/doccano
+docker pull quinnpertuit1/prolabel
 ```
 
 **Option2: Setup Python environment**
@@ -129,11 +129,11 @@ Depending on your installation method, there are two options:
 First, run a Docker container:
 
 ```bash
-docker run -d --rm --name doccano \
+docker run -d --rm --name prolabel \
   -e "ADMIN_USERNAME=admin" \
   -e "ADMIN_EMAIL=admin@example.com" \
   -e "ADMIN_PASSWORD=password" \
-  -p 8000:8000 chakkiworks/doccano
+  -p 8000:8000 quinnpertuit1/prolabel
 ```
 
 #### Option 2: Running Django development server
@@ -182,7 +182,7 @@ Now, open a Web browser and go to <http://127.0.0.1:8000/login/>. You should see
 
 ### Create a project
 
-Now, try logging in with the superuser account you created in the previous step. You should see the doccano project list page:
+Now, try logging in with the superuser account you created in the previous step. You should see the prolabel project list page:
 
 <img src="./docs/projects.png" alt="projects" width=600>
 
@@ -247,7 +247,7 @@ After the annotation step, you can download the annotated data. Click the `Edit 
 
 <img src="./docs/export_data.png" alt="Edit label" width=600>
 
-You can export data as CSV file or JSON file by clicking the button. As for the export file format, you can check it here: [Export File Formats](https://github.com/chakki-works/doccano/wiki/Export-File-Formats). 
+You can export data as CSV file or JSON file by clicking the button. As for the export file format, you can check it here: [Export File Formats](https://github.com/quinnpertuit1/prolabel/wiki/Export-File-Formats). 
 
 Each exported document will have metadata column or key, which will contain
 additional columns or keys from the imported document. The primary use-case for metadata is to allow you to match exported data with other system
@@ -269,18 +269,18 @@ and the exported file will look like this:
 
 ### Tutorial
 
-We prepared a NER annotation tutorial, which can help you have a better understanding of doccano. Please first read the README page, and then take the tutorial. [A Tutorial For Sequence Labeling Project](https://github.com/chakki-works/doccano/wiki/A-Tutorial-For-Sequence-Labeling-Project).
+We prepared a NER annotation tutorial, which can help you have a better understanding of prolabel. Please first read the README page, and then take the tutorial. [A Tutorial For Sequence Labeling Project](https://github.com/quinnpertuit1/prolabel/wiki/A-Tutorial-For-Sequence-Labeling-Project).
 
 I hope you are having a great day!
 
 ## Contribution
 
-As with any software, doccano is under continuous development. If you have requests for features, please file an issue describing your request. Also, if you want to see work towards a specific feature, feel free to contribute by working towards it. The standard procedure is to fork the repository, add a feature, fix a bug, then file a pull request that your changes are to be merged into the main repository and included in the next release.
+As with any software, prolabel is under continuous development. If you have requests for features, please file an issue describing your request. Also, if you want to see work towards a specific feature, feel free to contribute by working towards it. The standard procedure is to fork the repository, add a feature, fix a bug, then file a pull request that your changes are to be merged into the main repository and included in the next release.
 
-Here are some tips might be helpful. [How to Contribute to Doccano Project](https://github.com/chakki-works/doccano/wiki/How-to-Contribute-to-Doccano-Project)
+Here are some tips might be helpful. [How to Contribute to Doccano Project](https://github.com/quinnpertuit1/prolabel/wiki/How-to-Contribute-to-Doccano-Project)
 
 ## Contact
 
 For help and feedback, please feel free to contact [the author](https://github.com/Hironsan).
 
-**If you are favorite to doccano, please follow my [GitHub](https://github.com/Hironsan) and [Twitter](https://twitter.com/Hironsan13) account.**
+**If you are favorite to prolabel, please follow my [GitHub](https://github.com/Hironsan) and [Twitter](https://twitter.com/Hironsan13) account.**
